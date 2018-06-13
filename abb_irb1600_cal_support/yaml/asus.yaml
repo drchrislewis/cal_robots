@@ -1,0 +1,26 @@
+---
+
+static_cameras:
+ -
+    camera_name: asus/rgb
+    trigger: NO_WAIT_TRIGGER
+    image_topic: /asus/rgb/image_rect_color
+    camera_optical_frame: asus_rgb_optical_frame
+    transform_interface: ros_camera_housing_cti
+#    options for transform_interface for cameras include:
+#    ros_camera_bti  broadcast the reference_frame to camera_optical_frame, but parameters map to inverse
+#    ros_camera_lti  listens to the camera_optical_frame relative to reference directly 
+#    ros_camera_housing_lti  listens to the camera_optical_frame relative to reference directly 
+#               must define camera_housing_frame: /camera_frame, but not used
+#    ros_camera_housing_bti  broadcast the reference_frame to camera_housing_frame,
+#               must define camera_housing_frame: /camera_frame
+#    ros_lti  listens to the reference_frame to camera_optical frame, does not invert
+#    ros_bti  broadcasts to the reference_frame to camera_optical frame, does not invert
+#    ros_camera_housing_cti  interfaces to the mutable_joint_state_publisher 
+#           must define camera_housing_frame: /camera_housing_frame
+#           must define camera_mounting_frame: /camera_mounting_frame
+    camera_housing_frame: asus_link
+    camera_mounting_frame: tool0
+
+
+    

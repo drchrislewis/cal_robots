@@ -1,0 +1,17 @@
+---
+
+static_cameras:
+ -
+    camera_name: Basler1
+    trigger: NO_WAIT_TRIGGER
+    image_topic: /image_color
+    camera_optical_frame: /Basler1_optical_frame1
+    transform_interface: ros_camera_scti
+    parent_frame: world
+ -
+    camera_name: Basler2
+    trigger: NO_WAIT_TRIGGER
+    image_topic: /image_color
+    camera_optical_frame: /Basler2_optical_frame1
+    transform_interface: ros_camera_scci
+    parent_frame: tool0

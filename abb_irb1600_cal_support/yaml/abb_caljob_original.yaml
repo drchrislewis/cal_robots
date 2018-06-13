@@ -1,0 +1,174 @@
+---
+reference_frame: world
+scenes:
+-
+     trigger: ROS_ROBOT_JOINT_VALUES_ACTION_TRIGGER
+     trig_action_server: rosRobotSceneTrigger_joint_values
+     joint_values:
+        - 0.0298289
+        - 0.0981992
+        - 0.56427
+        - -0.0390622
+        - -0.673764
+        - 3.25572
+     observations:
+     -
+          camera: asus/rgb
+          target: modified_circle_10x10
+          roi_x_min: 0
+          roi_x_max: 640
+          roi_y_min: 0
+          roi_y_max: 480
+          cost_type: LinkCameraTargetReprjErrorPK
+-
+     trigger: ROS_ROBOT_JOINT_VALUES_ACTION_TRIGGER
+     trig_action_server: rosRobotSceneTrigger_joint_values
+     joint_values:
+        - 0.0477843
+        - 0.362017
+        - 0.580045
+        - -0.00783455
+        - -0.953066
+        - 3.2297
+     observations:
+     -
+          camera: asus/rgb
+          target: modified_circle_10x10
+          roi_x_min: 0
+          roi_x_max: 640
+          roi_y_min: 0
+          roi_y_max: 480
+          cost_type: LinkCameraTargetReprjErrorPK
+-
+     trigger: ROS_ROBOT_JOINT_VALUES_ACTION_TRIGGER
+     trig_action_server: rosRobotSceneTrigger_joint_values
+     joint_values:
+        - -0.233839
+        - 0.436523
+        - 0.512931
+        - -0.345755
+        - -0.989241
+        - 4.14133
+     observations:
+     -
+          camera: asus/rgb
+          target: modified_circle_10x10
+          roi_x_min: 0
+          roi_x_max: 640
+          roi_y_min: 0
+          roi_y_max: 480
+          cost_type: LinkCameraTargetReprjErrorPK
+-
+     trigger: ROS_ROBOT_JOINT_VALUES_ACTION_TRIGGER
+     trig_action_server: rosRobotSceneTrigger_joint_values
+     joint_values:
+        - -0.208352
+        - 0.58667
+        - 0.229832
+        - -0.763648
+        - -0.736173
+        - 4.4709
+     observations:
+     -
+          camera: asus/rgb
+          target: modified_circle_10x10
+          roi_x_min: 0
+          roi_x_max: 640
+          roi_y_min: 0
+          roi_y_max: 480
+          cost_type: LinkCameraTargetReprjErrorPK
+-
+     trigger: ROS_ROBOT_JOINT_VALUES_ACTION_TRIGGER
+     trig_action_server: rosRobotSceneTrigger_joint_values
+     joint_values:
+        - 0.185313
+        - 0.625056
+        - 0.264029
+        - 0.301007
+        - -0.639495
+        - 2.99409
+     observations:
+     -
+          camera: asus/rgb
+          target: modified_circle_10x10
+          roi_x_min: 0
+          roi_x_max: 640
+          roi_y_min: 0
+          roi_y_max: 480
+          cost_type: LinkCameraTargetReprjErrorPK
+-
+     trigger: ROS_ROBOT_JOINT_VALUES_ACTION_TRIGGER
+     trig_action_server: rosRobotSceneTrigger_joint_values
+     joint_values:
+        - 0.366791
+        - 0.675968
+        - 0.157419
+        - 0.611865
+        - -0.641909
+        - 2.45753
+     observations:
+     -
+          camera: asus/rgb
+          target: modified_circle_10x10
+          roi_x_min: 0
+          roi_x_max: 640
+          roi_y_min: 0
+          roi_y_max: 480
+          cost_type: LinkCameraTargetReprjErrorPK
+-
+     trigger: ROS_ROBOT_JOINT_VALUES_ACTION_TRIGGER
+     trig_action_server: rosRobotSceneTrigger_joint_values
+     joint_values:
+        - 0.357917
+        - 0.744211
+        - 0.0649639
+        - 1.28439
+        - -1.36578
+        - 2.0411
+     observations:
+     -
+          camera: asus/rgb
+          target: modified_circle_10x10
+          roi_x_min: 0
+          roi_x_max: 640
+          roi_y_min: 0
+          roi_y_max: 480
+          cost_type: LinkCameraTargetReprjErrorPK
+-
+     trigger: ROS_ROBOT_JOINT_VALUES_ACTION_TRIGGER
+     trig_action_server: rosRobotSceneTrigger_joint_values
+     joint_values:
+        - -0.0745737
+        - 0.640992
+        - 0.170872
+        - -1.57701
+        - -1.5543
+        - 3.9539
+     observations:
+     -
+          camera: asus/rgb
+          target: modified_circle_10x10
+          roi_x_min: 0
+          roi_x_max: 640
+          roi_y_min: 0
+          roi_y_max: 480
+          cost_type: LinkCameraTargetReprjErrorPK
+-
+     trigger: ROS_ROBOT_JOINT_VALUES_ACTION_TRIGGER
+     trig_action_server: rosRobotSceneTrigger_joint_values
+     joint_values:
+        - -0.0756033
+        - 0.860869
+        - -0.182982
+        - -1.57938
+        - -1.55565
+        - 4.24587
+     observations:
+     -
+          camera: asus/rgb
+          target: modified_circle_10x10
+          roi_x_min: 0
+          roi_x_max: 640
+          roi_y_min: 0
+          roi_y_max: 480
+          cost_type: LinkCameraTargetReprjErrorPK

@@ -1,0 +1,20 @@
+---
+
+static_cameras:
+ -
+    camera_name: Basler21511094
+    trigger: NO_WAIT_TRIGGER
+    image_topic: /Basler21511094/image_raw
+    camera_optical_frame: basler1_optical_frame
+    transform_interface: ros_camera_housing_cti
+    camera_housing_frame: basler1
+    camera_mounting_frame: world
+ -
+    camera_name: Basler21511083
+    trigger: NO_WAIT_TRIGGER
+    image_topic: /Basler21511083/image_raw
+    camera_optical_frame: basler2_optical_frame
+    transform_interface: ros_camera_lti
+    camera_housing_frame: basler2
+    camera_mounting_frame: basler1_optical_frame
+    left_stereo_pair_name: Basler21511094

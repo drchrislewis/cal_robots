@@ -1,0 +1,5 @@
+<node  name="camera_info_node" pkg="cloud_stitching" type="camera_info_publisher_node" output="screen">
+    <remap from="~/cloud" to="/phoxi_camera/pointcloud" />
+    <remap from="~/image" to="/phoxi_camera/depth_map" />
+    <remap from="~/camera_info" to="/phoxi_camera/camera_info" />
+  </node>
