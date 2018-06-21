@@ -107,5 +107,17 @@
   -->
   <xacro:basler_sensor_definitions prefix="basler2" parent_link="basler1_optical_frame"/>
 
+  <!-- add a  second baser camera in the workcell as the right camera in the stereo pair, note, -->
+  <!--This adds the following mutable joint states, add them to the mutable joint states yaml file and run the node
+      basler3_x_joint
+      basler3_y_joint
+      basler3_z_joint
+      basler3_yaw_joint
+      basler3_pitch_joint
+      basler3_roll_joint
+      NOTE: currently these values must be set by hand by typing the values into the mutablejointstates.yaml file
+      stereo-extrinsic calibration is done off line using mcc_scal.launch
+  -->
+  <xacro:basler_sensor_definitions prefix="basler3" parent_link="world"/>
 
 </robot>
