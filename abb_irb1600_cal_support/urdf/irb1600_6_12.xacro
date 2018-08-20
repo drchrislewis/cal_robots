@@ -91,22 +91,22 @@
       basler1_z_joint
       basler1_yaw_joint
       basler1_pitch_joint
-      basler1_roll_joint    -->
+      basler1_roll_joint    
   <xacro:basler_sensor_definitions prefix="basler1" parent_link="world"/>
-
+-->
   <!-- add a  second baser camera in the workcell as the right camera in the stereo pair, note, -->
   <!--This adds the following mutable joint states, add them to the mutable joint states yaml file and run the node
       basler2_x_joint
       basler2_y_joint
       basler2_z_joint
-      basler2_yaw_joint
+      basler2_yaw_joi
       basler2_pitch_joint
       basler2_roll_joint
       NOTE: currently these values must be set by hand by typing the values into the mutablejointstates.yaml file
       stereo-extrinsic calibration is done off line using mcc_scal.launch
-  -->
-  <xacro:basler_sensor_definitions prefix="basler2" parent_link="basler1_optical_frame"/>
 
+  <xacro:basler_sensor_definitions prefix="basler2" parent_link="basler1_optical_frame"/>
+  -->
   <!-- add a  second baser camera in the workcell as the right camera in the stereo pair, note, -->
   <!--This adds the following mutable joint states, add them to the mutable joint states yaml file and run the node
       basler3_x_joint
@@ -119,5 +119,18 @@
       stereo-extrinsic calibration is done off line using mcc_scal.launch
   -->
   <xacro:basler_sensor_definitions prefix="basler3" parent_link="world"/>
+
+    <!-- add a  second baser camera in the workcell as the right camera in the stereo pair, note, -->
+  <!--This adds the following mutable joint states, add them to the mutable joint states yaml file and run the node
+      basler4_x_joint
+      basler4_y_joint
+      basler4_z_joint
+      basler4_yaw_joint
+      basler4_pitch_joint
+      basler4_roll_joint
+      NOTE: currently these values must be set by hand by typing the values into the mutablejointstates.yaml file
+      stereo-extrinsic calibration is done off line using mcc_scal.launch
+  -->
+  <xacro:basler_sensor_definitions prefix="basler4" parent_link="basler3_optical_frame"/>
 
 </robot>

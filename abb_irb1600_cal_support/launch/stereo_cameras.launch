@@ -14,6 +14,12 @@
   <arg name="node3_name" default="MCC_cam10"/>
   <arg name="config3_file" default="$(find artemis_calibration)/yaml/ACA1920_25gc_22701905.yaml" /> 
 
+  <!--MCC_cam1-->
+  <arg name="camera4_number" default="22293037"/> 
+  <arg name="node4_name" default="MCC_cam1"/>
+  <arg name="config4_file" default="$(find artemis_calibration)/yaml/ACA1920_25gc_22293037.yaml" /> 
+
+<!--
   <include  file="$(find industrial_extrinsic_cal)/launch/basler_camera.launch" >
      <arg name="camera_number" value="$(arg camera1_number)"/>
      <arg name="node_name"     value="$(arg node1_name)"/>
@@ -25,11 +31,17 @@
      <arg name="node_name"     value="$(arg node2_name)"/>
      <arg name="config_file"   value="$(arg config2_file)"/>
   </include>
-
+-->
   <include  file="$(find industrial_extrinsic_cal)/launch/basler_camera.launch" >
      <arg name="camera_number" value="$(arg camera3_number)"/>
      <arg name="node_name"     value="$(arg node3_name)"/>
      <arg name="config_file"   value="$(arg config3_file)"/>
+  </include>
+
+  <include  file="$(find industrial_extrinsic_cal)/launch/basler_camera.launch" >
+     <arg name="camera_number" value="$(arg camera4_number)"/>
+     <arg name="node_name"     value="$(arg node4_name)"/>
+     <arg name="config_file"   value="$(arg config4_file)"/>
   </include>
 
 <!--
@@ -48,7 +60,7 @@
           <param name="use_circle_detector" value="false"/>
 	  <param name="camera_to_target_distance" value="1.2"/>
   </node>
--->
+
 
   <node name="left_results" pkg="image_view" type="image_view" >
       <remap to="Basler$(arg camera1_number)/observer_results_image" from="image"/>
@@ -58,8 +70,14 @@
       <remap to="Basler$(arg camera2_number)/observer_results_image" from="image"/>
   </node>
 
+-->
   <node name="middle_results" pkg="image_view" type="image_view" >
       <remap to="Basler$(arg camera3_number)/observer_results_image" from="image"/>
   </node>
+
+  <node name="right_results" pkg="image_view" type="image_view" >
+      <remap to="Basler$(arg camera4_number)/observer_results_image" from="image"/>
+  </node>
+
 
 </launch>
